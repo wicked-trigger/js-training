@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Calculator </title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script>
+  function handleInput () {
+    const aobj = document.getElementById ('a');
+    const a = aobj.value;
+    console.log(a);
+    const bobj = document.getElementById ('b');
+    const b = bobj.value;
+    console.log(b);
+    const c = parseInt(a) + parseInt(b);
+    document.getElementById("output").innerHTML = c;
+  }
+  </script>
+</head>
+
+<body>
+  <input id="a" type="text" name="a" value="0" oninput="handleInput()">
+  <br>
+  <input id="b" type="text" name="b" value="0" oninput="handleInput()">
+  <br>
+  <div id="output">
+    0
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+body {
+    background-color: cadetblue;
+    display: flex;  
+}
+
+input {
+    border-radius: 7px;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 8px 10px;
+}
+
+input[type=password]:focus {
+    border: 3px solid beige;
+}
+
+#login {
+    margin: auto;
+}
+
+#success {
+    visibility: hidden;
+}
+
+#fail {
+    visibility: hidden;
+}
+
+#password {
+    background-color: beige;
+    
+}
+
+#submit, #button {
+    background-color: beige;
+    padding: 4px 7px;
+    text-align: center;
+}
